@@ -1,0 +1,47 @@
+.front {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+
+    .idx {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+/* show backside */
+
+.back {
+    backface-visibility: visible;
+    -webkit-backface-visibility: visible;
+
+    transform: rotateY(0deg) translateZ(-10px);
+    -webkit-transform: rotateY(0deg) translateZ(-10px);
+    -moz-transform: rotateY(0deg) translateZ(-10px);
+
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+
+    perspective: 1000;
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+
+    img {
+        width: 100%;
+    }
+}
+
+
+.score {
+    color: black;
+    font-size: 20px;
+    font-family: sans-serif;
+    span {
+        font-size: 18px;
+    }
+}
