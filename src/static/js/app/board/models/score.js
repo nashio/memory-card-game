@@ -16,12 +16,12 @@ var Score = backbone.Model.extend({
 
     decreaseScore: function(){
         var newScore = this.get('score') - Math.round(this.offset / 2);
-        this.set('score', +newScore);
+        this.set('score', + newScore);
     },
 
     increaseScore: function(){
         var newScore = this.get('score') + (this.offset * 3);
-        this.set('score', +newScore);
+        this.set('score', + newScore);
     }
 
 });
